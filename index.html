@@ -144,7 +144,7 @@
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
                 <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/text.jpeg"></div>
+    <div id="home-background" ref="homeBackground" data-images="/images/back.jpeg"></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
@@ -170,11 +170,11 @@
     <div class="category-and-date">
         
         <span class="category">
-            <a href="/categories/blog1/">
+            <a href="/categories/blog2/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                blog1
+                blog2
             </a>
         </span>
         
@@ -190,7 +190,7 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <h3 id="1-This-is-a-biog-Test"><a href="#1-This-is-a-biog-Test" class="headerlink" title="1. This is a biog Test"></a>1. This is a biog Test</h3><ul>
+            <h3 id="1-This-is-a-blog-Test"><a href="#1-This-is-a-blog-Test" class="headerlink" title="1. This is a blog Test"></a>1. This is a blog Test</h3><ul>
 <li>First</li>
 <li>Second</li>
 </ul>
@@ -215,12 +215,7 @@
         
         <span class="tag">
             
-            <a href="/tags/test/" style="color: #00bcd4">test</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/tag2/" style="color: #03a9f4">tag2</a>
+            <a href="/tags/tag2/" style="color: #00bcd4">tag2</a>
         </span>
         
     </div>
@@ -232,6 +227,15 @@
         <h2 class="post-title">Hello World</h2>
     </a>
     <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/blog1/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                blog1
+            </a>
+        </span>
         
         <span class="date">
             <span class="icon">
@@ -264,7 +268,16 @@
     </div>
     <div class="post-tags">
         
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
         
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/tag1/" style="color: #03a9f4">tag1</a>
+        </span>
         
     </div>
     <a href="/2023/09/09/hello-world/" class="go-post">阅读全文</a>
