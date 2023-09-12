@@ -3,7 +3,7 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
-        <title>Archives | Hello</title>
+        <title>tags | Hello</title>
         <meta name="author" content="EzraLi" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -28,6 +28,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -141,67 +145,31 @@
 </transition>
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-                
-<div id="archives">
-    
-    <div id="timeline-wrap" ref="timeline">
+                <div class="article">
+    <div>
+        <h1>tags</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/9/12
+        </span>
         
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/9/9</div>
-                <a href="/2023/09/09/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="test2">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2023/9/12</div>
-                <a href="/2023/09/12/Test2/">
-                    <h3>Test2</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/blog1/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            blog1
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/test/" style="color: #00bcd4">test</a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/tag2/" style="color: #00a596">tag2</a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
         
     </div>
+    
+    <div class="content" v-pre>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
 </div>
 
                 <footer id="footer">
@@ -232,6 +200,12 @@
             
         </div>
         <script src="/js/main.js"></script>
+        
+        
+
+
+
+
         
     </body>
 </html>
