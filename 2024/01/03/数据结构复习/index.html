@@ -3,7 +3,7 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
-        <title>Welcome</title>
+        <title> | Welcome</title>
         <meta name="author" content="EzraLi" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -33,7 +33,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -143,32 +145,11 @@
 </transition>
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-                <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/back.jpeg"></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>Welcome</h1>
-                <h3></h3>
-                <h5></h5>
-            </div>
-        </span>
+                <div class="article">
+    <div>
+        <h1></h1>
     </div>
-</div>
-<div id="home-posts-wrap" true ref="homePostsWrap">
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2024/01/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
-        
+    <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
@@ -178,10 +159,9 @@
         
         
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="数据结构复习"><a href="#数据结构复习" class="headerlink" title="数据结构复习"></a>数据结构复习</h1><h3 id="一、二叉树"><a href="#一、二叉树" class="headerlink" title="一、二叉树"></a>一、二叉树</h3><h4 id="1-二叉树的遍历"><a href="#1-二叉树的遍历" class="headerlink" title="1.二叉树的遍历"></a>1.二叉树的遍历</h4><pre><code class="c++">#include&lt;iostream&gt;
+    
+    <div class="content" v-pre>
+        <h1 id="数据结构复习"><a href="#数据结构复习" class="headerlink" title="数据结构复习"></a>数据结构复习</h1><h3 id="一、二叉树"><a href="#一、二叉树" class="headerlink" title="一、二叉树"></a>一、二叉树</h3><h4 id="1-二叉树的遍历"><a href="#1-二叉树的遍历" class="headerlink" title="1.二叉树的遍历"></a>1.二叉树的遍历</h4><pre><code class="c++">#include&lt;iostream&gt;
 #include&lt;stack&gt;
 using namespace std;
 
@@ -1039,487 +1019,13 @@ int main()
 </code></pre>
 <p><img src="E:\数据结构\期末复习\1b7df9ff433943eca387bc06b0c67ea4.png" alt="图片"></p>
 
-            
-        </div>
     </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/01/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/10/07/%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
-        <h2 class="post-title">栈的基本操作</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/blog3/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                blog3
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/10/7
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="栈的基本操作"><a href="#栈的基本操作" class="headerlink" title="栈的基本操作"></a>栈的基本操作</h2><h3 id="栈的存储方式"><a href="#栈的存储方式" class="headerlink" title="栈的存储方式"></a>栈的存储方式</h3><p>1.顺序存储</p>
-<p>2.链式存储（栈顶是表头，栈底是表尾）</p>
-<h3 id="栈的基本操作–顺序存储："><a href="#栈的基本操作–顺序存储：" class="headerlink" title="栈的基本操作–顺序存储："></a><strong>栈的基本操作–<strong>顺序存储</strong>：</strong></h3><h4 id="栈的基本操作包括6个"><a href="#栈的基本操作包括6个" class="headerlink" title="栈的基本操作包括6个"></a>栈的基本操作包括6个</h4><ol>
-<li><p>InitStack(&amp;s):初始化空栈；</p>
-</li>
-<li><p>StackEmpty(s)：判断一个栈是否为空；</p>
-</li>
-<li><p>Push(&amp;s,x):入栈，若栈S未满，这将x加入栈，使之称为栈顶；</p>
-</li>
-<li><p>Pop(&amp;s):出栈，若栈S非空，则弹出栈顶元素；</p>
-</li>
-<li><p>GetTop(s,x):读栈顶元素；</p>
-</li>
-<li><p>DestroyStack(&amp;s):销毁栈，释放栈S所占用内存空间；</p>
-</li>
-</ol>
-<p><strong>1.InitStack(&amp;s):初始化一个空栈：</strong></p>
-<p>创建一个空栈后，将栈顶指针指向-1；</p>
-<pre><code class="cpp">void stackinit(sq&amp; s)
-&#123;
-    s.top = -1;
-&#125;
-</code></pre>
-<p><strong>2.StackEmpty(s):判断一个在栈是否为空：</strong></p>
-<pre><code class="cpp">bool stackempty(sq s)
-&#123;
-    if (s.top == -1) return true; //为空返回true
-    else return false; //不为空返回false
-&#125;
-</code></pre>
-<p><strong>3.Push(&amp;s,x):入栈，若栈S未满，这将x加入栈，使之称为栈顶：</strong></p>
-<pre><code class="cpp">bool push(sq&amp; s, int x)
-&#123;
-    if (s.top == maxsize - 1) return false; //如果栈空间满，则不能再插入元素，否则导致内存溢出，直接返回false；
-    s.data[++s.top] = x; //栈不满，则可以插入元素，将栈顶指针上移，再将需要插入的元素赋值给栈顶
-    return true;
-&#125;
-</code></pre>
-<p><strong>4.Pop(&amp;s):出栈，若栈S非空，则弹出栈顶元素：</strong></p>
-<pre><code class="cpp">void pop(sq&amp; s)
-&#123;
-    if (s.top == -1) cout &lt;&lt; &quot;栈空&quot;&lt;&lt;endl; //栈为空，则不能出栈。
-    s.top--; //栈不空，能出栈，栈顶指针下移
-&#125;
-</code></pre>
-<p><strong>5.GetTop(s,x):读栈顶元素：</strong></p>
-<pre><code class="cpp">int gettop(sq s)
-&#123;
-    int x; //接收栈顶元素 
-    if (s.top == -1) return -1; //栈空，无法读取元素
-    x = s.data[s.top]; //栈不空，将当前栈顶元素赋值给x
-    return x; //返回x的值，即读取x的值
-&#125;
-</code></pre>
-<p><strong>6.DestroyStack(&amp;s):销毁栈，释放栈S所占用内存空间：</strong></p>
-<pre><code class="cpp">void destorystack(sq &amp;s) &#123;
-    if (s.top!=-1) free(s.data); //若栈不空，释放栈所占用的内存空间
-    s.top = -1;
-&#125;
-</code></pre>
-<p><strong>整体代码：</strong></p>
-<pre><code class="cpp">
-#include&lt;iostream&gt;
-using namespace std;
-#define maxsize 10
-typedef struct &#123;
-    int data[maxsize];
-    int top;
-&#125;sq;
-void stackinit(sq&amp; s)
-&#123;
-    s.top = -1;
-&#125;
-bool stackempty(sq s)
-&#123;
-    if (s.top == -1) return true;
-    else return false;
-&#125;
-bool push(sq&amp; s, int x)
-&#123;
-    if (s.top == maxsize - 1) return false;
-    s.data[++s.top] = x;
-    return true;
-&#125;
-void pop(sq&amp; s)
-&#123;
-    if (s.top == -1) cout &lt;&lt; &quot;栈空&quot;&lt;&lt;endl;
-    s.top--;
-&#125;
-int gettop(sq s)
-&#123;
-    int x;
-    if (s.top == -1) return -1;
-    x = s.data[s.top];
-    return x;
-&#125;
-void destorystack(sq &amp;s) 
-&#123;
-    if (s.top!=-1) free(s.data);
-    s.top = -1;
-&#125;
-int main() &#123;
-    sq s1;
-    stackinit(s1);
-    for (int i = 0; i &lt; 10; i++)
-    &#123;
-        push(s1, i);
-    &#125;
-    while (!stackempty(s1))
-    &#123;
-        cout &lt;&lt; gettop(s1)&lt;&lt; &quot; &quot;;
-        s1.top--;
-    &#125;	
-    cout &lt;&lt; endl;
-    for (int i = 0; i &lt; 10; i++)
-    &#123;
-        push(s1, i);
-    &#125;
-    pop(s1);
-    while (!stackempty(s1))
-    &#123;
-        cout &lt;&lt; gettop(s1) &lt;&lt; &quot; &quot;;
-        s1.top--;
-    &#125;
-    destorystack(s1);
-    return 0;
-&#125;
-</code></pre>
-<h3 id="栈的基本操作–链式存储："><a href="#栈的基本操作–链式存储：" class="headerlink" title="栈的基本操作–链式存储："></a><strong>栈的基本操作–<strong>链式存储</strong>：</strong></h3><p><strong>链式存储就是对链表的操作，在这里可以设置头节点也可以不设置头节点。</strong></p>
-<p><strong>我这里以单链表有头结点的头插法为例。</strong></p>
-<p><strong>链栈的节点定义：</strong></p>
-<pre><code class="cpp">typedef struct Linknode 
-&#123;
-    int data;
-    struct Linknode* next;
-&#125;;
-</code></pre>
-<p><strong>1.InitStack(*head):初始化一个空栈：</strong></p>
-<pre><code class="cpp">void initlink(Linknode *head) 
-&#123;
-    if (head == nullptr) cout &lt;&lt; &quot;分配失败&quot; &lt;&lt; endl;
-    else head-&gt;next = nullptr;
-&#125;
-</code></pre>
-<p><strong>2.StackEmpty(*head):判断一个在栈是否为空：</strong></p>
-<pre><code class="cpp">bool isempty(Linknode* head) 
-&#123;
-    if (head-&gt;next == nullptr)  return true;
-    else return false;
-&#125;
-</code></pre>
-<p><strong>3.Push(*head,x):入栈:</strong></p>
-<pre><code class="cpp">void enqueue(Linknode* head,int x) 
-&#123;
-    Linknode* L = new Linknode[sizeof(Linknode)];
-    L-&gt;data = x;
-    L-&gt;next = head-&gt;next;
-    head-&gt;next = L;
-&#125;
-</code></pre>
-<p><strong>4.Pop(*head):出栈:</strong></p>
-<pre><code class="cpp">void dequeue(Linknode* head)
-&#123;
-    Linknode* L = new Linknode[sizeof(Linknode)];
-    L = head-&gt;next;
-    head-&gt;next = L-&gt;next;
-    delete[] L;
-&#125;
-</code></pre>
-<p><strong>5.GetTop(s,x):读栈顶元素：</strong></p>
-<pre><code class="cpp">void gethead(Linknode* head)
-&#123;
-    int x;
-    x = head-&gt;next-&gt;data;
-    cout &lt;&lt; x &lt;&lt; endl;
-&#125;
-</code></pre>
-<p><strong>6.DestroyStack(&amp;s):销毁栈:</strong></p>
-<pre><code class="cpp">void DestroyStack(Linknode* head) 
-&#123;
-    Linknode* p = new Linknode[sizeof(Linknode)];
-    p = head-&gt;next;
-    if (!isempty(head)) &#123;
-        while (head-&gt;next != nullptr)
-        &#123;
-            head-&gt;next = p-&gt;next;
-            delete[]p;
-            p = head-&gt;next;
-        &#125;
-    &#125;
-    delete[]p;
-&#125;
-</code></pre>
-<p><strong>整体代码：</strong></p>
-<pre><code class="cpp">#include&lt;iostream&gt;
-using namespace std;
-typedef struct Linknode 
-&#123;
-    int data;
-    struct Linknode* next;
-&#125;;
-void initlink(Linknode *head) 
-&#123;
-    //head = new Linknode[sizeof(Linknode)];
-    if (head == nullptr) cout &lt;&lt; &quot;分配失败&quot; &lt;&lt; endl;
-    else head-&gt;next = nullptr;
-&#125;
-bool isempty(Linknode* head) 
-&#123;
-    if (head-&gt;next == nullptr)  return true;
-    else return false;
-&#125;
-void enqueue(Linknode* head,int x) 
-&#123;
-    Linknode* L = new Linknode[sizeof(Linknode)];
-    L-&gt;data = x;
-    L-&gt;next = head-&gt;next;
-    head-&gt;next = L;
-&#125;
-void dequeue(Linknode* head)
-&#123;
-    Linknode* L = new Linknode[sizeof(Linknode)];
-    L = head-&gt;next;
-    head-&gt;next = L-&gt;next;
-    delete[] L;
-&#125;
-void gethead(Linknode* head)
-&#123;
-    int x;
-    x = head-&gt;next-&gt;data;
-    cout &lt;&lt; x &lt;&lt; endl;
-&#125;
-void DestroyStack(Linknode* head) 
-&#123;
-    Linknode* p = new Linknode[sizeof(Linknode)];
-    p = head-&gt;next;
-    if (!isempty(head)) 
-    &#123;
-        while (head-&gt;next != nullptr)
-        &#123;
-            head-&gt;next = p-&gt;next;
-            delete[]p;
-            p = head-&gt;next;
-        &#125;
-    &#125;
-    delete[]p;
-&#125;
-int main() 
-&#123;
-    Linknode* h = new Linknode[sizeof(Linknode)];
-    initlink(h);
-    if (isempty(h)) cout &lt;&lt; &quot;链表空&quot; &lt;&lt; endl;
-    for (int i = 0; i &lt; 10; i++)
-    &#123;
-        enqueue(h, i);
-    &#125;
-    gethead(h);
-    dequeue(h);
-    gethead(h);
-    DestroyStack(h);
-    return 0;
-&#125;
-</code></pre>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="color: #00a596">数据结构</a>
-        </span>
-        
-    </div>
-    <a href="/2023/10/07/%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/09/12/Test2/">
-        <h2 class="post-title">Test2</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/blog2/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                blog2
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/12
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h3 id="1-This-is-a-blog-Test"><a href="#1-This-is-a-blog-Test" class="headerlink" title="1. This is a blog Test"></a>1. This is a blog Test</h3><ul>
-<li>First</li>
-<li>Second</li>
-</ul>
-<hr>
-<h3 id="2-Show-Text"><a href="#2-Show-Text" class="headerlink" title="2. Show Text"></a>2. Show Text</h3><ul>
-<li><strong>这是加粗</strong><blockquote>
-<p><em>这是斜体</em></p>
-</blockquote>
-</li>
-</ul>
-<pre><code class="bash">$ 这，我也不知道是啥，哈哈哈
-</code></pre>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/tag2/" style="color: #00a596">tag2</a>
-        </span>
-        
-    </div>
-    <a href="/2023/09/12/Test2/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/09/09/hello-world/">
-        <h2 class="post-title">Hello World</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/blog1/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                blog1
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/9
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/tag1/" style="color: #00bcd4">tag1</a>
-        </span>
-        
-    </div>
-    <a href="/2023/09/09/hello-world/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
     
-    <span class="current">1</span>
     
     
     
     
-</div>
-
-    </div>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/smile.jpg" alt="avatar" />
-        </div>
-        <div class="name">EzraLi</div>
-        <div class="description">
-            <p>A wonderful journey···</p>
-
-        </div>
-        
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://github.com/EzraLi/hello.git">More</a>
-            </div>
-            
-        </div>
-        
-    </div>
-</div>
-
-    </div>
     
 </div>
 
@@ -1551,6 +1057,12 @@ int main()
             
         </div>
         <script src="/js/main.js"></script>
+        
+        
+
+
+
+
         
     </body>
 </html>
